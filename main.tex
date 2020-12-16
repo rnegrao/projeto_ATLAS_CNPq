@@ -1,0 +1,103 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{lib/report-template}
+\usepackage[all]{background}
+\usepackage{lipsum}
+
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\SetBgContents{}% Set contents
+\SetBgPosition{-0.5cm,-5.0cm}% Select location
+\SetBgOpacity{1.0}% Select opacity
+\SetBgAngle{90.0}% Select rotation of logo
+\SetBgScale{2.0}% Select scale factor of logo
+
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.5}
+
+\title{projeto ATLAS}
+
+\date{August 2019}
+
+
+\begin{document}
+
+\include{lib/frontpage}
+\include{lib/facepage}
+\include{parts/resumo}
+\include{parts/abstract}
+
+\tableofcontents
+
+\include{parts/introducao}
+\include{parts/objetivos}
+%\include{parts/desafios_cientificos_tecnologicos}
+\include{parts/cronograma}
+\include{parts/disseminacao}
+
+\begin{thebibliography}{9}
+
+\bibitem{HL_LHC} Oliver Brüning and Lucio Rossi, The High Luminosity Large Hadron Collider: The New Machine for Illuminating the Mysteries of Universe, World Scientific, CERN, October 2015,  https://doi.org/10.1142/9581
+
+\bibitem{tdr} ATLAS collaboration, Technical Proposal: A High-Granularity Timing Detector for the ATLAS Phase-II Upgrade, CERN-LHCC-2018-023.
+
+\bibitem{JIN_LGAD} N. Moffat. et al., JINST. 13, (2018) C03014.
+
+\bibitem{NIMA_LGAD} M. Carulla. et al., Nucl. Instrum. Meth. A 924, (2019) 373. 
+
+%
+\bibitem{NIMA_LGAD_I} G. Pellegrini. et al., Nucl. Instrum. Meth. A 831, (2016) 24-28.
+
+\bibitem{NIMA_LGAD_II} D. Breton. et al., Nucl. Instrum. Meth. A 835, (2016) 51-60.
+
+\bibitem{NIMA_LGAD_III} M. Ferrero. et al., Nucl. Instrum. Meth. A 919, (2019) 16-26.
+%
+
+\bibitem{atlas_rev} G. Brandt, \textit{Review of Current Standard Model Results from ATLAS}. Few-Body Syst 59, 128 (2018). 
+
+%%
+%\bibitem{IPEN_REATOR} I. A. Tomiyoshi, S. S. Iyer, and C. Rodrigues, Journal of Radioanalytical and Nuclear Chemistry, 237, 1-2, (1998) 85-89.
+
+%\bibitem{IPEN_AURORA} C.B.R. Parente. et al., Nucl. Instrum. Meth. A 622, (2010) 678–684.
+
+%%
+%\bibitem{ALICEUP} ALICE Collaboration, J. Phys. G: Nucl. Part. Phys. 41 (2014) 087001.
+
+%\bibitem{ref1} B. A. et al. (ALICE Collaboration), Technical design report for the upgrade of the alice time projection chamber, CERN-LHCC-2013-020 A886 (2013), http://cds.cern.ch/record/1622286.
+
+
+\bibitem{tpcNIM} M.M. Aggarwal, et al., Nucl. Instrum. Meth. A 903, (2018) 215–223. 
+
+\bibitem{discharge_paper} A. Deisting, et al., Nucl. Instrum. Meth. A 937, (2019) 168–180.
+
+
+%
+\bibitem{GSI_REPO} Garabatos C., et al., Stability test of ALICE TPC GEM chambers at the LHC, GSI FAIR SCIENTIFIC REPORT 2017, DOI:10.15120/GSI-2017-01856.
+%
+
+\bibitem{THGEM} H. Natal da Luz, et al., EPJ Web of Conferences 174, (2018) 01012.
+
+%\bibitem{book1} G. Lutz, Semiconductor Radiation Detectors: Device Physics, Springer-Verlag, Berlin Heidelberg, 2007. 
+
+%\bibitem{book2} H. Spieler, Semiconductor Detector Systems, Oxford University Press, Great Britain, 2005.
+
+%\bibitem{COMSOL} https://www.comsol.com/comsol-multiphysics
+
+\bibitem{NIM} G. G. A. de Souza and  H. Natal da Luz, Nucl. Inst. Meth. A 937, (2019) 141–147.
+\thispagestyle{plain}
+\bibitem{xray} G.G.A. de Souza and H.N. da Luz, X-Ray Spectrometry 48, 5 (2018).
+
+\bibitem{sirius} https://www.lnls.cnpem.br/sirius/livro-projeto-sirius/
+\thispagestyle{plain}
+
+%\bibitem{production_protocol} http://indico.cern.ch/event/645829/
+
+
+\end{thebibliography}
+\newpage
+
+\end{document}
